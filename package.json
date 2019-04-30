@@ -1,0 +1,9 @@
+{
+  "name": "no-junkfood",
+  "version": "0.0.1",
+    "dependencies": {
+    "safe-buffer": "^5.1.2",
+    "sendgrid": "^5.2.3",
+    "uuid": "^3.3.2"
+  }
+}

@@ -47,9 +47,18 @@ function sendGridEmail(key, data, to, from, subject) {
 /* @param {object} description of Monzo request
 */
 function descriptionIsNaughty(description) {
-    var naughtyWords = ["kfc", "mcdonald", "chicken", "kebab"];
+    var naughtyWords = ["SPUDULIKE",
+                        "COOKIES",
+                        "KRISPY KREME",
+                        "BURGER KING",
+                        "KFC",
+                        "MCDONALD’S",
+                        "GREGGS",
+                        "CHICKEN",
+                        "KEBAB"];
+    
     for (var i = 0; i < naughtyWords.length; i++) {
-        if (description.toLowerCase().indexOf(naughtyWords[i]) > -1) {
+        if (description.toUpperCase().indexOf(naughtyWords[i]) > -1) {
             return true;
         }
     }
